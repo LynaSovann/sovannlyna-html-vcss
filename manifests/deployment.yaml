@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: sovannlyna-html-vcss-container
-          image: pipejet/sovannlyna-html-vcss:0
+          image: pipejet/sovannlyna-html-vcss:2
           ports:
             - containerPort: 80
