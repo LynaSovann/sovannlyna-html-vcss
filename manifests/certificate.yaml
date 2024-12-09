@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: sovannlyna-html-vcss-certificate
+  namespace: sovannlyna-html-vcss
+spec:
+  secretName: sovannlyna-html-vcss-secret-tls
+  commonName: sovannlyna-html-vcss.assessify.org
+  dnsNames:
+  - sovannlyna-html-vcss.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
